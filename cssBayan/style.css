@@ -69,9 +69,11 @@ h1{
 	position: relative;
 }
 .accordion__content img{
+	padding: 10px;
 	height: 350px;
 }
 .accordion__content{
+
 	border-top: 0;
 	height: 0px;
 	overflow: hidden;
@@ -88,7 +90,13 @@ h1{
 .accordion__input:hover ~ .accordion__content{
 	height: 350px;
 }
+.accordion__content:hover{
+	height: 350px;
+}
 .accordion__input:hover ~ .accordion__triger:after{
+	background: url("./assets/down-svgrepo-com.svg") 0 0/30px 30px no-repeat;
+}
+.accordion__item:hover  .accordion__triger:after{
 	background: url("./assets/down-svgrepo-com.svg") 0 0/30px 30px no-repeat;
 }
 
@@ -111,6 +119,8 @@ background: url("./assets/down-svgrepo-com.svg") 0 0/30px 30px no-repeat;
 @media (max-width: 800px) {
 	.wrapper{
 		max-width: 700px; 
+		height: 100%;
+		overflow: hidden;
 	}
  }
  @media (max-width: 700px) {
@@ -155,7 +165,7 @@ background: url("./assets/down-svgrepo-com.svg") 0 0/30px 30px no-repeat;
 			background: url("./assets/down-svgrepo-com.svg") 0 0/20px 20px no-repeat;
 			}
  }
- 
+
  @media (max-width: 500px) {
 	.wrapper{
 		max-width: 400px; 
