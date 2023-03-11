@@ -27,8 +27,12 @@ body{
 .accordion__item{
 	position: relative;
 	margin-bottom: 20px;
+
 	
 }
+.accordion *{
+	cursor: pointer;
+} 
 .accordion__input{
 	position: absolute;
 	top: 0;
@@ -83,10 +87,13 @@ h1{
 }
 
 .accordion{
-	color: orange;
+	color: orange;	
+	margin-top: 20px;
 }
 .accordion:hover{
 	color: black;
+	
+	
 }
 .accordion__input:hover ~ .accordion__content{
 	height: 350px;
@@ -142,6 +149,7 @@ background: url("./assets/down-svgrepo-com.svg") 0 0/30px 30px no-repeat;
 		.accordion__input:checked ~ .accordion__content{
 			height: 280px;
 		}
+	
 		.accordion__triger::after{
 			content: "";
 			position: absolute;
