@@ -40,12 +40,12 @@ body{
 h1{
 	margin-top: 50px;
 	display: block;
-	font-size: 40px;
+	font-size: 45px;
 	font-weight: 600;
 }
 .accordion__triger{
 	display: block;
-	padding: 20px 0 10px 0;
+	padding-top: 20px;
 	font-size: 25px;
 	font-weight: 600;
 	border-top: 3px solid #767676;
@@ -135,9 +135,11 @@ background: url("./assets/down-svgrepo-com.svg") 0 0/30px 30px no-repeat;
 }
 
 .accordion:hover .accordion__icon{
-	font-size: 30px;
+	font-size: 40px;
 }
-
+.accordion__text{
+	padding: 10px 0;
+}
 .accordion__input:checked ~ .accordion__triger .accordion__title .accordion__icon{
 	transform: rotate(225deg);
 	transition: 0.1s ease-in-out;
@@ -169,6 +171,12 @@ background: url("./assets/down-svgrepo-com.svg") 0 0/30px 30px no-repeat;
 		.accordion__content img{
 			height: 280px;
 		}
+		.accordion__item:hover  .accordion__content{
+			height: 300px;
+		}
+		.accordion__content:hover{
+			height: 300px;
+		}
 		.accordion__input:checked ~ .accordion__content{
 			height: 300px;
 		}
@@ -194,6 +202,8 @@ background: url("./assets/down-svgrepo-com.svg") 0 0/30px 30px no-repeat;
 			font-size: 30px;
 		}
 
+		.accordion__text{
+			padding: 5px 0;}
 		/* .accordion__input:hover ~ .accordion__triger:after{
 			background: url("./assets/down-svgrepo-com.svg") 0 0/20px 20px no-repeat;
 			
@@ -221,15 +231,7 @@ background: url("./assets/down-svgrepo-com.svg") 0 0/30px 30px no-repeat;
 		max-width: 320px; 
 	}
 	.accordion__triger{
-		font-size: 16px;
+		font-size: 14px;
 	}
 }
 
-@media (max-width: 320px) {
-	.wrapper{
-		max-width: 300px; 
-	}
-	.accordion__triger{
-		font-size: 14px;
-	}
-} 
